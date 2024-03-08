@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="stylesheet" type="text/javascript" href="js/bootstrao.min.js"></script>
+</head>
+<body>
+    <form action="prosesregist.php" method="post">
+    <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <label for="level">Level: </label>
+        <select name="level" id="level">
+            <option selected disabled>Pilih Role mu</option>
+            <option name="level" value="admin">Admin</option>
+            <option name="level" value="user">User</option>
+        </select>
+        <button type="submit" name="submit">REGIST</button>
+    </form>
+</body>
+</html>
